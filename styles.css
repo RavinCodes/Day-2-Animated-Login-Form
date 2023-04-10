@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100dvh;
+    background-color: #ffffff;
+}
+.form-container{
+    animation-name: colorChanger;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2c2c54;
+    color: white;
+    width: 25rem;
+    border-radius: 0.9rem;
+    padding: 5em 2rem;
+    box-shadow: 0 0 20px 0 black;
+    border: 2px solid cyan;
+}
+.login-title{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.userName,
+.userPassword {
+    text-align: center;
+    border: 2px solid cyan;
+    margin: 1rem;
+    color: white;
+    background: transparent;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    width: 16rem;
+    font-size: 1rem;
+    outline: none;
+    transition: all .2s ease-in-out;   
+}
+.userName:focus,
+.userPassword:focus {
+    width: 20rem;
+    animation-name: colorChange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+/* Animation for Text Input Box */
+
+
+@keyframes colorChange {
+
+    0% {
+        border-color: green;
+    color:  green;
+    }
+
+    10% {
+        border-color: yellow;
+    color: yellow ;
+
+    }
+
+    20% {
+        border-color: hotpink;
+      color:  hotpink;  
+    }
+
+    30% {
+        border-color: red;
+    color:red;
+    }
+
+    40% {
+        border-color: purple;
+        color:  purple;
+    }
+
+    50% {
+        border-color: yellow;
+    color: yellow ;
+
+    }
+
+    60% {
+        border-color: cyan;
+    color: cyan ;
+    }
+
+    70% {
+        border-color: skyblue;
+    color: skyblue ;
+    }
+
+    80% {
+        border-color: pink;
+    color:  pink;
+    }
+
+    90% {
+        border-color: red;
+        color:  red;
+
+    }
+    100% {
+        border-color: yellow;
+    color: yellow ;
+    }
+}
+
+/* Animation for Form Outline */
+
+@keyframes colorChanger {
+
+    0% {
+        border-color: green;
+    
+    }
+
+    10% {
+        border-color: yellow;
+    
+
+    }
+
+    20% {
+        border-color: hotpink;
+        
+    }
+
+    30% {
+        border-color: red;
+    
+    }
+
+    40% {
+        border-color: purple;
+        
+    }
+
+    50% {
+        border-color: yellow;
+    
+
+    }
+
+    60% {
+        border-color: cyan;
+    
+    }
+
+    70% {
+        border-color: skyblue;
+    
+    }
+
+    80% {
+        border-color: pink;
+    
+    }
+
+    90% {
+        border-color: red;
+    
+    }
+
+    100% {
+        border-color: yellow;
+    
+    }
+}
+
+.loginBtn{
+    background-color: transparent;
+    border: 2px solid #FC2947;
+    padding: 1rem 3rem;
+    border-radius: 3rem;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.loginBtn:hover{
+    background:#FC2947;
+    border: 2px solid #FC2947;
+}
+
+/* color:  ; */
